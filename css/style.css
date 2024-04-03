@@ -26,6 +26,21 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header > img {
+    padding: 30px;
+    margin: auto;
+}
+
+.header-tabs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 a {
     color: inherit;
     text-decoration: none;
