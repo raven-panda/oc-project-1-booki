@@ -156,8 +156,20 @@ header .tab-button {
     margin-bottom: 5px;
 }
 
+/***** Footer *****/
 
-
+footer {
+    display: flex;
+    flex-direction: row;
+    background: var(--main-bg-color);
+    padding: 40px;
+}
+.footer-section {
+    width: 100%;
+}
+.footer-section > * {
+    margin: 0 0 16px 0;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -218,5 +230,9 @@ header .tab-button {
         border-top: none;
         border-bottom: 2px solid var(--inactive-color);
         padding-bottom: 10px;
+    }
+    footer {
+        flex-direction: column;
+        row-gap: 32px;
     }
 }
