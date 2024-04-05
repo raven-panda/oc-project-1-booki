@@ -31,6 +31,10 @@ h1, h2 {
     font-size: 22px;
 }
 
+h1, h2, p {
+    margin: 0;
+}
+
 button, input {
     outline: none;
     background: none;
@@ -88,6 +92,10 @@ header .tab-button {
     box-sizing: border-box;
 }
 
+.page-title-container h1 {
+    margin-bottom: 8px;
+}
+
 /***** Search Form *****/
 
 .search-lodge-container {
@@ -127,6 +135,15 @@ header .tab-button {
 }
 
 /***** Filters *****/
+.filters-container {
+    display: flex;
+    gap: 15px;
+}
+
+.filters-container h2 {
+    margin: 0;
+}
+
 .filter-buttons-container {
     display: flex;
     gap: 20px;
@@ -142,6 +159,8 @@ header .tab-button {
 }
 
 .search-form-tooltip {
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -315,6 +334,11 @@ footer {
     }
 
     /***** Body *****/
+
+    /***** Filters *****/
+    .filters-container {
+        flex-direction: column;
+    }
     .filter-buttons-container {
         display: grid;
         grid: 50px 50px / 1fr 1fr;
