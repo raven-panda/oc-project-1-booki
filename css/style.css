@@ -40,13 +40,13 @@ header > img {
 .header-tabs-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 40px;
 }
 
 header .tab-button {
     background: none;
     border: none;
     border-top: 2px solid var(--inactive-color);
+    padding-bottom: 40px;
 }
 
 .tab-button.active {
@@ -197,5 +197,20 @@ a {
     }
     .main-container {
         padding: 0;
+    }
+    header {
+        flex-direction: column;
+    }
+    header > img {
+        margin: auto;
+    }
+    .header-tabs-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header .tab-button {
+        border-top: none;
+        border-bottom: 2px solid var(--inactive-color);
+        padding-bottom: 10px;
     }
 }
