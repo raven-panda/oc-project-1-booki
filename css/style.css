@@ -378,6 +378,9 @@ footer {
     }
 
     /***** Filters *****/
+    .filters-container {
+        align-items: unset;
+    }
     .filter-buttons-container {
         display: grid;
         grid: 50px 50px / 1fr 1fr;
