@@ -7,6 +7,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --inactive-color: #00000000;
 }
 
 .fa-solid {
@@ -28,12 +29,12 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header > img {
     padding: 30px;
-    margin: auto;
 }
 
 .header-tabs-container {
@@ -179,6 +180,9 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    :root {
+        --inactive-color: #F2F2F2;
+    }
     .main-container {
         padding: 0;
     }
