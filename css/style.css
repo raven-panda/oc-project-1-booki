@@ -20,13 +20,12 @@ body {
     margin: 0;
 }
 
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
+/***** Header *****/
 header {
     display: flex;
     flex-direction: row;
@@ -54,9 +53,13 @@ header .tab-button {
     border-color: var(--main-color);
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+/***** Body *****/
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 .section-title {
