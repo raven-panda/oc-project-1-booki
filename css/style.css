@@ -141,6 +141,10 @@ header .tab-button {
     gap: 10px;
 }
 
+.search-form-tooltip {
+    gap: 10px;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
