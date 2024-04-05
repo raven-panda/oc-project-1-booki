@@ -127,12 +127,12 @@ header .tab-button {
 }
 
 /***** Filters *****/
-.filters-container {
+.filter-buttons-container {
     display: flex;
     gap: 20px;
 }
 
-.filters-container button {
+.filter-buttons-container button {
     border: 2px solid var(--button-main-border-color);
     border-radius: 25px;
     font-size: 14px;
@@ -315,7 +315,7 @@ footer {
     }
 
     /***** Body *****/
-    .filters-container {
+    .filter-buttons-container {
         display: grid;
         grid: 50px 50px / 1fr 1fr;
     }
