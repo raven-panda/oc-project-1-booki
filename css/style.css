@@ -8,6 +8,8 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
     --button-main-border-color: #D9D9D9;
+    --main-font-color: #000;
+    --second-font-color: #FFF;
     --inactive-color: #00000000;
 }
 
@@ -63,7 +65,7 @@ header {
 }
 
 header > img {
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .header-tabs-container {
@@ -99,26 +101,35 @@ header .tab-button {
 /***** Search Form *****/
 
 .search-lodge-container {
-    padding: 20px;
     gap: 35px;
+    margin-bottom: 45px;
     display: flex;
     flex-direction: column;
 }
 
 #search-lodge-form {
     display: grid;
-    grid: 50px / 50px 1fr;
+    grid: 50px / 50px auto;
+    margin-right: auto;
 }
 
 #search-lodge-form button {
+    color: white;
     background: var(--main-color);
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 0 15px 15px 0;
+    justify-content: center;
+    padding: 14px 16px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#search-lodge-form button img {
+    display: none;
 }
 
 .lodge-search-bar {
     display: grid;
-    grid-template-columns: 1fr 50px;
+    grid-template-columns: 1fr auto;
     border-top: 1px solid var(--main-bg-color);
     border-bottom: 1px solid var(--main-bg-color);
     border-radius: 0 15px 15px 0;
@@ -137,6 +148,7 @@ header .tab-button {
 /***** Filters *****/
 .filters-container {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
@@ -275,6 +287,12 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    /***** Filters ******/
+    .filters-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -334,11 +352,32 @@ footer {
     }
 
     /***** Body *****/
+    #search-lodge-form {
+        grid: 50px / 50px 1fr;
+        margin: 0;
+    }
+    .lodge-search-bar {
+        grid-template-columns: 1fr 50px;
+    }
+    #search-lodge-form button {
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+    #search-lodge-form button span {
+        display: none;
+    }
+
+    #search-lodge-form button img {
+        display: block;
+    }
+
+    /***** Search form *****/
+    .search-lodge-container {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
 
     /***** Filters *****/
-    .filters-container {
-        flex-direction: column;
-    }
     .filter-buttons-container {
         display: grid;
         grid: 50px 50px / 1fr 1fr;
