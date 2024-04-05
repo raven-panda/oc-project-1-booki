@@ -128,8 +128,7 @@ header .tab-button {
 
 /***** Filters *****/
 .filters-container {
-    display: grid;
-    grid: 50px 50px / 1fr 1fr;
+    display: flex;
     gap: 20px;
 }
 
@@ -139,6 +138,7 @@ header .tab-button {
     font-size: 14px;
     font-weight: 700;
     gap: 10px;
+    padding: 12px 16px;
 }
 
 .search-form-tooltip {
@@ -296,6 +296,8 @@ footer {
     .main-container {
         padding: 0;
     }
+
+    /***** Header *****/
     header {
         flex-direction: column;
     }
@@ -311,6 +313,14 @@ footer {
         border-bottom: 2px solid var(--inactive-color);
         padding-bottom: 10px;
     }
+
+    /***** Body *****/
+    .filters-container {
+        display: grid;
+        grid: 50px 50px / 1fr 1fr;
+    }
+
+    /***** Footer *****/
     footer {
         flex-direction: column;
         row-gap: 32px;
