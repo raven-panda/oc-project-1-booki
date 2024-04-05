@@ -40,6 +40,18 @@ header > img {
 .header-tabs-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 40px;
+}
+
+header .tab-button {
+    background: none;
+    border: none;
+    border-top: 2px solid var(--inactive-color);
+}
+
+.tab-button.active {
+    color: var(--main-color);
+    border-color: var(--main-color);
 }
 
 a {
