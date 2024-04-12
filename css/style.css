@@ -79,7 +79,8 @@ header > img {
 
 header .tab-button {
     border-top: 2px solid var(--inactive-color);
-    padding-bottom: 40px;
+    padding: 16px;
+    text-align: center;
 }
 
 .tab-button.active {
@@ -429,7 +430,6 @@ footer {
     header .tab-button {
         border-top: none;
         border-bottom: 2px solid var(--inactive-color);
-        padding-bottom: 10px;
     }
 
     /***** Body *****/
