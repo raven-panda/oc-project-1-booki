@@ -37,6 +37,10 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 button, input {
     outline: none;
     background: none;
@@ -173,6 +177,10 @@ header .tab-button {
     font-weight: 700;
     gap: 10px;
     padding: 12px 16px;
+}
+
+.filter-buttons-container button:hover {
+    background-color: var(--filter-bg-color);
 }
 
 .search-form-tooltip {
