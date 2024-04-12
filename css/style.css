@@ -212,6 +212,7 @@ header .tab-button {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    row-gap: 50px;
 }
 
 .hebergements-and-populaires section {
@@ -433,9 +434,6 @@ footer {
     }
 
     /***** Hebergements and populaires *****/
-    .hebergements-and-populaires {
-        row-gap: 50px;
-    }
     .hebergements-and-populaires .populaires {
         order: 0;
         border-radius: 0;
@@ -443,6 +441,17 @@ footer {
     .hebergements-and-populaires .hebergements {
         background-color: inherit;
         order: 1;
+    }
+
+
+    /***** Hebergements *****/
+    .hebergements-cards {
+        grid: auto / auto;
+    }
+
+    /***** Populaires *****/
+    .populaires-cards {
+        flex-direction: column;
     }
 
     /***** Footer *****/
