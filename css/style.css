@@ -193,6 +193,12 @@ header {
     gap: 10px;
 }
 
+.tooltip-icon {
+    border: 1px solid var(--button-main-border-color);
+    border-radius: 25px;
+    padding: 12px 10px;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
