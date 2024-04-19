@@ -83,7 +83,7 @@ header {
     justify-content: space-between;
 }
 
-header > img {
+.booki-logo {
     padding: 30px 0;
 }
 
@@ -92,7 +92,7 @@ header > img {
     grid-template-columns: 1fr 1fr;
 }
 
-header .tab-button {
+.tab-button {
     border-top: 2px solid var(--inactive-color);
     padding: 16px;
     text-align: center;
@@ -434,14 +434,14 @@ footer {
     header {
         flex-direction: column;
     }
-    header > img {
+    .booki-logo {
         margin: auto;
     }
     .header-tabs-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    header .tab-button {
+    .tab-button {
         border-top: none;
         border-bottom: 2px solid var(--inactive-color);
     }
