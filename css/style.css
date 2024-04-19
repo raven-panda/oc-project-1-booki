@@ -13,8 +13,19 @@
     --inactive-color: #00000000;
 }
 
-.fa-solid {
+.fa-blue {
     color: var(--main-color);
+}
+
+.fa-white {
+    color: var(--second-font-color);
+}
+
+.hide-mobile {
+    display: block;
+}
+.hide-desktop {
+    display: none;
 }
 
 body {
@@ -95,7 +106,8 @@ header .tab-button {
 /***** Body *****/
 
 .main-container {
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -120,16 +132,12 @@ header .tab-button {
     margin-right: auto;
 }
 
-#search-lodge-form button {
+.search-button {
     color: white;
     background: var(--main-color);
     border-radius: 0 15px 15px 0;
     justify-content: center;
     padding: 14px 16px;
-}
-
-#search-lodge-form button img {
-    display: none;
 }
 
 .lodge-search-bar {
@@ -385,6 +393,10 @@ footer {
         width: 100%;
     }
 
+    .populaires-cards {
+        flex-direction: row;
+    }
+
     .populaires-cards a {
         width: 30%;
     }
@@ -407,6 +419,12 @@ footer {
 @media (max-width: 767.98px) {
     :root {
         --inactive-color: #F2F2F2;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .hide-desktop {
+        display: block;
     }
     .main-container {
         padding: 0;
@@ -436,16 +454,9 @@ footer {
     .lodge-search-bar {
         width: 100%;
     }
-    #search-lodge-form button {
+    .search-button {
         border-radius: 15px;
         box-shadow: 0px 4px 4px 0px #00000040;
-    }
-    #search-lodge-form button span {
-        display: none;
-    }
-
-    #search-lodge-form button img {
-        display: block;
     }
 
     /***** Search form *****/
