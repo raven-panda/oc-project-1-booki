@@ -149,7 +149,7 @@ header {
 
 .icon-place-pin {
     background-color: var(--main-bg-color);
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0 0 15px;
     width: 50px;
     height: auto;
 }
@@ -462,7 +462,7 @@ footer {
     }
     .search-button {
         border-radius: 15px;
-        box-shadow: 0px 4px 4px 0px #00000040;
+        box-shadow: 0 4px 4px 0 #00000040;
     }
 
     /***** Search form *****/
