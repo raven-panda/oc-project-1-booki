@@ -17,19 +17,17 @@
 <body>
     <div class="main-container">
         <header>
-            <img class="booki-logo" src="images/logo/Booki.png" alt="Booki logo" width="61" height="19">
-            <nav class="header-tabs-container">
-                <a class="tab-button active" href="#hebergements">Hébergements</a>
-                <a class="tab-button" href="#activites">Activités</a>
-            </nav>
-        </header>
-        <main>
-            <div class="search-lodge-container">
-                <div class="page-title-container">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre-ville ou en pleine nature</p>
-                </div>
-                <form id="search-lodge-form" action="#" method="get">
+            <section class="header-nav">
+                <img class="booki-logo" src="images/logo/Booki.png" alt="Booki logo" width="61" height="19">
+                <nav class="header-tabs-container">
+                    <a class="tab-button active" href="#hebergements">Hébergements</a>
+                    <a class="tab-button" href="#activites">Activités</a>
+                </nav>
+            </section>
+            <section class="search-lodge-container">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <form id="search-lodge-form" class="mt35" action="#" method="get">
                     <div class="icon-place-pin flex-centered height-100">
                         <i class="fa-solid fa-lg fa-location-dot"></i>
                     </div>
@@ -42,7 +40,7 @@
                     </div>
                 </form>
 
-                <div class="filters-container">
+                <div class="filters-container mt35">
                     <h2 class="fs18">Filtres</h2>
                     <div class="filter-buttons-container">
                         <button type="button" class="flex-centered bold">
@@ -63,11 +61,13 @@
                         </button>
                     </div>
                 </div>
-                <div class="search-form-tooltip">
+                <div class="search-form-tooltip mt35">
                     <i class="fa-solid fa-blue fa-xs fa-info tooltip-icon flex-centered"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
-            </div>
+            </section>
+        </header>
+        <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements" id="hebergements">
                     <h3 class="section-title">Hébergements à Marseille</h3>
